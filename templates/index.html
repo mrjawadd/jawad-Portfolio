@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jawad's Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">Jawad</div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero / Dashboard -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-image">
+                <img src="{{ url_for('static', filename='images/me.jpeg') }}" alt="Jawad">
+            </div>
+            <div class="hero-text">
+                <h1>Hi, I'm <span class="highlight">Jawad</span></h1>
+                <h2><span class="typing"></span></h2>
+                <p>I create modern, responsive, and efficient web applications powered by Python, Flask, and machine learning.</p>
+                <a href="/projects" class="btn">Explore My Work</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Dashboard Section -->
+    <section class="dashboard">
+        <div class="card">
+            <i class="bi bi-code-slash"></i>
+            <h3>Web Development</h3>
+            <p>Building fast, responsive websites and apps using Flask, HTML, CSS, and JavaScript.</p>
+        </div>
+        <div class="card">
+            <i class="bi bi-cpu"></i>
+            <h3>Machine Learning</h3>
+            <p>Working on ML models and data analysis using Python, NumPy, Pandas, and Scikit-learn.</p>
+        </div>
+        <div class="card">
+            <i class="bi bi-lightbulb"></i>
+            <h3>Problem Solving</h3>
+            <p>Developing clean logic and optimized code to handle complex computational problems.</p>
+        </div>
+        <div class="card">
+            <i class="bi bi-person-lines-fill"></i>
+            <h3>Collaboration</h3>
+            <p>Passionate about teamwork, open-source contribution, and project-based learning.</p>
+        </div>
+    </section>
+
+    <!-- Project Preview -->
+    <!-- Project Preview -->
+<section class="project-preview">
+    <h2>Featured Projects</h2>
+    <div class="project-grid">
+        <!-- Project 1 -->
+        <div class="project">
+            <img src="{{ url_for('static', filename='images/me.jpeg') }}" alt="Flask Portfolio">
+            <h3>Flask Portfolio</h3>
+            <p>Modern personal portfolio built using Flask and SQLite.</p>
+            <a href="https://github.com/yourusername/portfolio" target="_blank" class="btn-small">View on GitHub</a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project">
+            <img src="{{ url_for('static', filename='images/project1.png') }}" alt="ML Prediction App">
+            <h3>ML Prediction App</h3>
+            <p>Machine learning web app for real-time predictions.</p>
+            <a href="https://github.com/yourusername/ml-app" target="_blank" class="btn-small">View on GitHub</a>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project">
+            <img src="{{ url_for('static', filename='images/project2.png') }}" alt="Chatbot">
+            <h3>Chatbot</h3>
+            <p>Smart Q&A chatbot integrated using Python backend.</p>
+            <a href="https://github.com/yourusername/chatbot" target="_blank" class="btn-small">View on GitHub</a>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project">
+            <img src="{{ url_for('static', filename='images/project3.png') }}" alt="Currency Converter">
+            <h3>Currency Converter</h3>
+            <p>Live currency converter with real-time exchange rates API.</p>
+            <a href="https://github.com/yourusername/currency-converter" target="_blank" class="btn-small">View on GitHub</a>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project">
+            <img src="{{ url_for('static', filename='images/project4.png') }}" alt="Weather App">
+            <h3>Weather App</h3>
+            <p>Dynamic weather web app with live API integration and interactive UI.</p>
+            <a href="https://github.com/yourusername/weather-app" target="_blank" class="btn-small">View on GitHub</a>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project">
+            <img src="{{ url_for('static', filename='images/project5.png') }}" alt="Library Management System">
+            <h3>Library Management System</h3>
+            <p>Complete library management tool using Python, Flask, and SQLite.</p>
+            <a href="https://github.com/yourusername/library-management" target="_blank" class="btn-small">View on GitHub</a>
+        </div>
+    </div>
+</section>
+
+
+    <footer>
+        <p>© 2025 Jawad | Designed with Flask & ❤️</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
